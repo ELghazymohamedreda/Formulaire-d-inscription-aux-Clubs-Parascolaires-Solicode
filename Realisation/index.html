@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -68,6 +69,15 @@
         }
         document.getElementById('email').type = 'Email';
         document.getElementById('tel').type = 'tel';
+        
+        document.getElementById('email').addEventListener('change', function() {
+        let array = this.value.split('@')
+        let domain = array[1]
+        if (domain != 'offpt.com') {
+            this.value = array[0] + '@'
+            alert('Email must be offpt.com')
+        }
+        })
     </script>
 </body>
 </html>

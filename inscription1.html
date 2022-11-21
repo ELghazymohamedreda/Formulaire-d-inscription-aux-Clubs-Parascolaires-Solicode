@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,300;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <title>inscription</title>
+</head>
+<body>
+    <header>
+        <div id="Logo1">
+            <h1>Club parascolaire à solicode</h1>
+        </div>
+    </header>
+    <section>
+        <form action="">
+        <fieldset style="margin-top: 20px;">
+            <legend>INSCRIPTION</legend>
+            <form id="form1" >
+                <input type="text" placeholder="Entrez votre Nom" id="nom" onkeyup="validName(this)"/>
+                <p id="return1"></p>
+                <input type="text" id="prenom" placeholder="Entrez votre Prénom" onkeyup="validPrenom(this)"/>
+                <p id="return2"></p>
+                <input type="email" placeholder="prenom.nom@ofppt.ma" id="email" onkeyup="validEmail(this)"/>
+                <p id="return3"></p>
+                <input type="text" id="tele" placeholder="Entrez votre Télephone" onkeyup="validTell(this)"/>
+                <p id="return4"></p>
+            </form>
+            <h3>Genre :</h3>
+            <form id="form2">
+                <label for="Féminin"><input type="radio" name="a" value="Féminin" id="Féminin">Féminin</label>
+                <label for="Masculin"><input type="radio" name="a" value="Masculin" id="Masculin">Masculin</label>
+                <p id="return5"></p>
+            </form>
+            <h3>Groupe :</h3>
+            <form id="selected">
+                <label for="DW101"><input type="radio" name="b" value="DW101" id="DW101">DW101</label>
+                <label for="DW102"><input type="radio" name="b" value="DW102" id="DW102">DW102</label>
+                <label for="DW103"><input type="radio" name="b" value="DW103" id="DW103">DW103</label>
+                <label for="DM101"><input type="radio" name="b" value="DM101" id="DM101">DM101</label>
+                <label for="DM102"><input type="radio" name="b" value="DM102" id="DM102">DM102</label>
+                <p id="return6"></p>
+            </form>
+            <h3>Club(s) :</h3>
+            <select id="selected1" multiple="multiple">
+                <option value="Informatique">Informatique</option>
+                <option value="Robotique">Robotique</option>
+                <option value="Jeu d'échecs">Jeu d'échecs</option>
+                <option value="Musique">Musique</option>
+                <option value="Foot">Foot</option>
+                <option value="Théatre">Théatre</option>
+            </select>
+            <p id="return7"></p>
+            <p id="return8"></p>
+            <div id="button">
+                <input type="submit" value="Valider" onclick="inscription()" >
+            </div>
+        </fieldset>
+    </form>
+    </section>
+    <script src="java.js"></script>
+    <footer>
+        <h2>Club parascolaire à solicode</h2>
+        <p>copyright© 2022.Club parascolaire à solicode</p>
+    </footer>
+</body>
+</html>

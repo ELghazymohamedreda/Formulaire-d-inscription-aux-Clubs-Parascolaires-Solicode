@@ -95,8 +95,10 @@ legend{
 #form1{
     margin-left: -11px;
     padding: 10px;
+   
 }
-#form1 input{
+.input1{
+    width: 400px;
     padding: 10px;
     font-size: 15px;
     margin: 10px;
@@ -104,6 +106,9 @@ legend{
 #form1 input:focus-within{
     outline: none;
 }
+
+
+
 h3{
     margin-top: 20px;
     font-weight: bold;

@@ -1,7 +1,8 @@
 var valide = true;
 
 
-function inscription(){
+document.getElementById('btnvalid').addEventListener('click', function(e) {
+    e.preventDefault()
     valide = true;
     let nom = document.getElementById('nom').value;
     let prenom = document.getElementById('prenom').value;
@@ -61,8 +62,15 @@ function inscription(){
     if(selected.length > 3){
         document.getElementById('return7').innerHTML="S'il vous plait choisez just 3 choix du club!!";
         valide= false;
-    }
-}
+    }   
+    if(valide){
+        document.getElementById("valid").style.display="block";
+        document.getElementById("form").style.display="none";
+
+    } 
+
+})
+
 
 function validName(){
     let nom = document.getElementById('nom').value;

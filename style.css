@@ -149,13 +149,16 @@ select{
     border: 3px solid #000;
 }
 
-#button{
+/* #btnvalid{
     margin-top: 40px;
     margin-left: 38%;
     margin-bottom: 20px;
-}
-#button input{
-    margin: 0 0 0 30px;
+} */
+#btnvalid {
+    margin-top: 40px;
+    /* margin-left: 38%; */
+    margin-bottom: 20px;
+    /* margin: 0 0 0 30px; */
     padding: 10px;
     font-size: 20px;
     background-color: #FCE700;
@@ -163,8 +166,9 @@ select{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-left: 30rem;
 }
-#button input:hover{
+#btnvalid input:hover{
     background-color: #fff;
     color: #000;
     font-weight: bold;
@@ -286,9 +290,21 @@ footer ul li a:hover{
     display: none;
 }
 
+#valid{
+    background-color: #EFF5F5;
+    text-align: center;
+    /* width: 100%; */
+    margin-top: 150px;
+    PADDING: 4rem;
+    border: 4px #FCE700 solid;
+}
 
 
 
-  
-
-  
+footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 10px;
+}

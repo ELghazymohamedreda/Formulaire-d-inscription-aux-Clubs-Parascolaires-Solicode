@@ -11,8 +11,8 @@ document.getElementById('btnvalid').addEventListener('click', function(e) {
     document.getElementById('tele').setAttribute("type", "tel");
     let checkboxes = document.querySelectorAll('input[name="a"]:checked');
     let checkboxes1 = document.querySelectorAll('input[name="b"]:checked');
-    let phoneRGEX = /^[(]{0,1}[0]{1}[)]{0,1}[5-7]{0,1}[0-9]{3}[0-9]{0,1}[0-9]{4}$/;
-    let validRegex = /^[a-zA-Z-.]+@{1}[o]{1}[f]{1}[p]{2}[t]{1}[.]{1}[m]{1}[a]{1}$/;
+    let phoneRGEX = /^(0)[5-7]\d{8}$/;
+    let validRegex = /^[a-zA-Z0-9]+(.)+[a-zA-Z0-9]+@(ofppt)(.(ma))$/
     let regName = /^[a-zA-Z ]+$/;
     let values = [];
     let values1 = [];

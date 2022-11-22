@@ -12,7 +12,7 @@ document.getElementById('btnvalid').addEventListener('click', function(e) {
     let checkboxes = document.querySelectorAll('input[name="a"]:checked');
     let checkboxes1 = document.querySelectorAll('input[name="b"]:checked');
     let phoneRGEX = /^(0)[5-7]\d{8}$/;
-    let validRegex = /^[a-zA-Z0-9]+(.)+[a-zA-Z0-9]+@(ofppt)(.(ma))$/
+    let validRegex = /^[a-zA-Z0-9]+(.)+[a-zA-Z0-9]+@(ofppt)(.(ma))$/;
     let regName = /^[a-zA-Z ]+$/;
     let values = [];
     let values1 = [];
